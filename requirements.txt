@@ -1,0 +1,26 @@
+# Dependency / Requirements Summary
+
+While this is a Node.js (Vite/React) project and dependencies are technically managed via package.json, here is the conceptual stack and requirement list for the GaiaOS Prototype:
+
+## Core Environment
+- Node.js >= 18.0.0
+- npm >= 9.0.0 (or yarn/pnpm equivalent)
+
+## External Services
+- Google Gemini API Key (Gemini 1.5 Pro access)
+
+## Primary Libraries (npm)
+- react (^18.x) - UI Framework
+- react-dom (^18.x) - DOM rendering binding
+- @google/generative-ai (^0.x) - Google Gemini API integration
+- framer-motion (^11.x) - Layout and UI animations
+- recharts (^2.x) - SVG based data visualization library for the dashboard
+- lucide-react (^0.x) - Clean, minimalist icon set
+
+## Development Dependencies
+- vite (^5.x or ^6.x) - Next Generation Frontend Tooling
+- @vitejs/plugin-react (^4.x) - Core React plugin for Vite
+- standard eslint plugins included by default Vite template
+
+To install all Node dependencies automatically, run:
+npm install
