@@ -35,7 +35,7 @@ export default function GeminiOracle({ isAuthenticated }) {
     try {
       if (!API_KEY) throw new Error("VITE_GEMINI_API_KEY missing from environment variables.");
       
-      const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
+      const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro-latest" });
       
       // Injecting a system prompt context so it acts like GaiaOS
       const prompt = `You are the core intelligence of GaiaOS, an Earth Data and Sustainability Engine. Speak concisely, professionally, and creatively about environmental topics. Address this query: ${userPrompt}`;
